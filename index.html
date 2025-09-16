@@ -1,0 +1,437 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Master Timetable 2024/2025 — Caroline Kimani</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Master Timetable — 2024/2025 Academic Year</h1>
+    <figure>
+      <img src="timetable_preview.png" alt="Photograph of the original printed master timetable for 2024/2025 academic year." class="preview">
+      <figcaption>Original timetable (reference).</figcaption>
+    </figure>
+
+    <section aria-labelledby="table-title">
+      <h2 id="table-title">School Timetable (Table implementation)</h2>
+      <p class="sr-only">This table recreates the provided timetable layout. Use arrow keys to navigate cells.</p>
+
+      <table class="timetable" role="table" summary="Weekly timetable for Years 7 to 11, Monday to Friday, periods 8:00 to 16:00">
+        <thead>
+          <tr>
+            <th scope="col" class="corner">Day / Time</th>
+            <th scope="col">8:00<br>8:10</th>
+            <th scope="col">8:10-8:55</th>
+            <th scope="col">9:00-9:45</th>
+            <th scope="col">9:45-10:15</th>
+            <th scope="col">10:15-11:00</th>
+            <th scope="col">11:05-11:50</th>
+            <th scope="col">11:55-12:40</th>
+            <th scope="col">12:40-1:30</th>
+            <th scope="col">1:30-2:15</th>
+            <th scope="col">2:20-3:05</th>
+            <th scope="col">3:10-3:55</th>
+            <th scope="col">3:55-4:00</th>
+            <th scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Monday: Years 7-11 grouped vertically -->
+          <tr>
+            <th scope="row">MON — Yr7</th>
+            <td>Form</td>
+            <td>Devotion</td>
+            <td>ICT 2</td>
+            <td rowspan="5" class="break">BREAK</td>
+            <td>MATH 11</td>
+            <td>ENG 17</td>
+            <td>PE 13</td>
+            <td rowspan="5" class="lunch">LUNCH</td>
+            <td>GEO 15</td>
+            <td>SCIENCE 9</td>
+            <td>MUSIC 8</td>
+            <td></td>
+            <td rowspan="5" class="form-tutor">FORM / TUTOR'S TIME</td>
+          </tr>
+
+          <tr>
+            <th scope="row">MON — Yr8</th>
+            <td>Form</td>
+            <td>Devotion</td>
+            <td>MATH 11</td>
+            <td>SCIENCE 9</td>
+            <td>ART 18</td>
+            <td>PE 13</td>
+            <td></td>
+            <td>ENG 17</td>
+            <td>LS 14</td>
+            <td>LS 14</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">MON — Yr9</th>
+            <td>Form</td>
+            <td>Devotion</td>
+            <td>ENG 17</td>
+            <td>HIST 10</td>
+            <td>SCIENCE 9</td>
+            <td>SWA13/FRE5/CHI6</td>
+            <td>MATH 4</td>
+            <td>BUS 11</td>
+            <td>MATH 4</td>
+            <td>P.E 13</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">MON — Yr10</th>
+            <td>Form</td>
+            <td>Devotion</td>
+            <td>ENG 7</td>
+            <td>LS 14</td>
+            <td>LS 14</td>
+            <td>MATH 4</td>
+            <td></td>
+            <td>BIO 19</td>
+            <td>GEO 15</td>
+            <td>HIST 10</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">MON — Yr11</th>
+            <td>Form</td>
+            <td>Devotion</td>
+            <td>GEO 15 / FRE 5</td>
+            <td>BIO 3</td>
+            <td>FRE/ICT 12</td>
+            <td>ENG 7</td>
+            <td></td>
+            <td>PHY 16</td>
+            <td>SWA 13</td>
+            <td>MATH 4</td>
+            <td></td>
+          </tr>
+
+          <!-- Tuesday (simplified, following image pattern) -->
+          <tr>
+            <th scope="row">TUE — Yr7</th>
+            <td>Form</td>
+            <td>SCIENCE 9</td>
+            <td>LIB</td>
+            <td rowspan="5" class="break">BREAK</td>
+            <td>MATH 11</td>
+            <td>ART 18</td>
+            <td>PE 13</td>
+            <td rowspan="5" class="lunch">LUNCH</td>
+            <td>GEO 15</td>
+            <td>ENG 17</td>
+            <td>LS 14</td>
+            <td></td>
+            <td rowspan="5" class="form-tutor">GENDER MEETING / DEBATE</td>
+          </tr>
+
+          <tr>
+            <th scope="row">TUE — Yr8</th>
+            <td>Form</td>
+            <td>MATH 11</td>
+            <td>SCIENCE 9</td>
+            <td>ENG 17</td>
+            <td>GEO 15</td>
+            <td>PE 13</td>
+            <td>BUS15/CHI6/FRE5</td>
+            <td>BUS15/CHI6/FRE5</td>
+            <td>BUS 4</td>
+            <td>BUS 4</td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">TUE — Yr9</th>
+            <td>Form</td>
+            <td>ENG 17</td>
+            <td>SWA13/FRE5/CHI6</td>
+            <td>HIST 10</td>
+            <td>CHEM 19</td>
+            <td>PHY 9</td>
+            <td>BUS15/CHI6/FRE5</td>
+            <td>BUS15/CHI6/FRE5</td>
+            <td>BUS 4</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">TUE — Yr10</th>
+            <td>Form</td>
+            <td>MATH 4</td>
+            <td>ENG 7</td>
+            <td>HIST 10</td>
+            <td>CHEM 19</td>
+            <td>PHY 9</td>
+            <td></td>
+            <td>BUS 4</td>
+            <td>BUS 4</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">TUE — Yr11</th>
+            <td>Form</td>
+            <td>ENG 7</td>
+            <td>MATH 4</td>
+            <td>PHY 16</td>
+            <td>GEO 15 / FRE 5</td>
+            <td>HIST 10</td>
+            <td></td>
+            <td>HIST 1</td>
+            <td>ART 18</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <!-- Wednesday (abbreviated) -->
+          <tr>
+            <th scope="row">WED — Yr7</th>
+            <td>Form</td>
+            <td>SCIENCE 9</td>
+            <td>MATH 11</td>
+            <td rowspan="5" class="break">BREAK</td>
+            <td>GEO 15</td>
+            <td>ENG 17</td>
+            <td>PE 13</td>
+            <td rowspan="5" class="lunch">LUNCH</td>
+            <td>HIST 1</td>
+            <td>ART 18</td>
+            <td></td>
+            <td></td>
+            <td rowspan="5" class="clubs">CLUBS</td>
+          </tr>
+
+          <tr>
+            <th scope="row">WED — Yr8</th>
+            <td>Form</td>
+            <td>MATH 11</td>
+            <td>ENG 17</td>
+            <td>HIST 1</td>
+            <td>ART 18</td>
+            <td>PE 13</td>
+            <td></td>
+            <td>SCIENCE 9</td>
+            <td>MUSIC 8</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">WED — Yr9</th>
+            <td>Form</td>
+            <td>ENG 17</td>
+            <td>SCIENCE 9</td>
+            <td>ICT 2</td>
+            <td>ICT 2</td>
+            <td>GEO 15</td>
+            <td></td>
+            <td>MATH 4</td>
+            <td>HIST 10</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">WED — Yr10</th>
+            <td>Form</td>
+            <td>ICT 2 / SWA 13</td>
+            <td>ICT 2 / SWA 13</td>
+            <td>MATH 4</td>
+            <td>PHY 9</td>
+            <td>ENG 7</td>
+            <td></td>
+            <td>BIO 19</td>
+            <td>GEO 15</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">WED — Yr11</th>
+            <td>Form</td>
+            <td>BUS 4</td>
+            <td>ENG 7</td>
+            <td>CHEM 3</td>
+            <td>GEO 15</td>
+            <td>MATH 4</td>
+            <td></td>
+            <td>ICT 12</td>
+            <td>ICT 12</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <!-- Thursday (abbreviated rows) -->
+          <tr>
+            <th scope="row">THU — Yr7</th>
+            <td>Form</td>
+            <td>MATH 11</td>
+            <td>SCIENCE 9</td>
+            <td rowspan="5" class="break">BREAK</td>
+            <td>HIST 1</td>
+            <td>ENG 17</td>
+            <td>ICT 2</td>
+            <td rowspan="5" class="lunch">LUNCH</td>
+            <td>MATH 4</td>
+            <td>GEO 15</td>
+            <td></td>
+            <td></td>
+            <td rowspan="5" class="mind-lecture">MIND LECTURE</td>
+          </tr>
+
+          <tr>
+            <th scope="row">THU — Yr8</th>
+            <td>Form</td>
+            <td>ENG 17</td>
+            <td>LIB</td>
+            <td>ENG 17</td>
+            <td>ICT 2</td>
+            <td>GEO 15</td>
+            <td></td>
+            <td>SCIENCE 9</td>
+            <td>SCIENCE 9</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">THU — Yr9</th>
+            <td>Form</td>
+            <td>SCIENCE 9</td>
+            <td>ENG 17</td>
+            <td>MATH 4</td>
+            <td>HIST 10</td>
+            <td>PE 13</td>
+            <td></td>
+            <td>GEO 15</td>
+            <td>BUS 11</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">THU — Yr10</th>
+            <td>Form</td>
+            <td>MATH 4</td>
+            <td>CHEM 19</td>
+            <td>ENG 7</td>
+            <td>DHV Q</td>
+            <td>DHV Q</td>
+            <td></td>
+            <td>MATH 4</td>
+            <td>GEO 15</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">THU — Yr11</th>
+            <td>Form</td>
+            <td>ENG 7</td>
+            <td>BUS 4</td>
+            <td>CHEM 3</td>
+            <td>CHEM 3</td>
+            <td>PHY 16</td>
+            <td></td>
+            <td>SWA 13</td>
+            <td>SWA 13</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <!-- Friday -->
+          <tr>
+            <th scope="row">FRI — Yr7</th>
+            <td>Form</td>
+            <td>MATH 11</td>
+            <td>ICT 2</td>
+            <td rowspan="5" class="break">BREAK</td>
+            <td>ENG 17</td>
+            <td>GEO 15</td>
+            <td>PE 13</td>
+            <td rowspan="5" class="lunch">LUNCH</td>
+            <td>SCIENCE 9</td>
+            <td>MUSIC 8</td>
+            <td></td>
+            <td></td>
+            <td rowspan="5" class="games">GAMES</td>
+          </tr>
+
+          <tr>
+            <th scope="row">FRI — Yr8</th>
+            <td>Form</td>
+            <td>ENG 17</td>
+            <td>GEO 15</td>
+            <td>MATH 11</td>
+            <td>HIST 1</td>
+            <td>PE 13</td>
+            <td></td>
+            <td>ICT 2</td>
+            <td>ICT 2</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">FRI — Yr9</th>
+            <td>Form</td>
+            <td>GEO 15</td>
+            <td>MATH 4</td>
+            <td>ICT 2</td>
+            <td>ENG 17</td>
+            <td>SCIENCE 9</td>
+            <td></td>
+            <td>BUS 11</td>
+            <td>BUS15/CHI6/FRE5</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">FRI — Yr10</th>
+            <td>Form</td>
+            <td>ICT 2 / SWA 13</td>
+            <td>HIST 10</td>
+            <td>MATH 4</td>
+            <td>CHEM 19</td>
+            <td>ENG 7</td>
+            <td></td>
+            <td>BIO 19</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <th scope="row">FRI — Yr11</th>
+            <td>Form</td>
+            <td>BIO 3</td>
+            <td>BIO 3</td>
+            <td>ENG 7</td>
+            <td>MATH 4</td>
+            <td>MATH 4</td>
+            <td></td>
+            <td>HIST 10</td>
+            <td>HIST 10</td>
+            <td></td>
+            <td></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
